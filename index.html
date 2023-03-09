@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMRAC</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .conta{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(90, 202, 230);
+            position: absolute;
+            top: 100px;
+            left: 7%;
+            bottom: 50%;
+            transform: rotate(45deg);
+            box-shadow: 2px 2px 130px  rgb(118, 212, 224);
+            border-color: rgb(118, 212, 224);
+            overflow: hidden;
+        }
+        body{
+            background-color: black;
+        }
+        .conta img{
+            transform: rotate(-45deg);
+            height: 620px;
+            /* width: 500px; */
+            position: relative;
+            top: 10px;
+            left: -26px;
+        }
+        nav {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(118, 212, 224);
+        }
+        ul img {
+            position: relative;
+            right: 0px;
+            left: -750px;
+            height: 51px;
+            width: 58px;
+            top: 18px
+        }
+        nav ul {
+            position:absolute;
+            background-color: black;
+            color: green;
+            list-style: none;
+            /* height: 5px; */
+            padding: 2px;
+        }
+
+        li {
+            display: inline;
+            margin: 7px;
+            padding: 50px 30px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            background-color: white;
+            color: green;
+        }
+        #signin{
+            background-color: black;
+            color: green;
+            text-decoration: none;
+        }
+        h1{
+            color: green;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+        }
+        p{
+            position: absolute;
+            color: green;
+            top: 50%;
+            left: 50%;
+        }
+        #name{
+            position: absolute;
+            left: 55%;
+            color:  rgb(118, 212, 224);
+            text-shadow: 2px 2px 130px rgb(118, 212, 224);
+        }
+        #home{
+            background-color: black;
+
+        }
+        #downloadcv{
+            background-color: green;
+            border-color: green;
+            border-radius: 10px;
+            text-decoration: none;
+            color: aqua;
+            display: flex;
+            height: 19px;
+            width: 96px;
+            margin: 3px;
+            padding: 5px;
+            position: absolute;
+            top: 80%;
+            left: 49%;
+        }
+
+    </style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><img src="logo-r.png" alt="No"></li>
+                <li><a id="home" href="">Home</a></li>
+                <li><a id="signin" href="signpage.html">Signin</a></li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    <div class="conta">
+        <img src=".\rambg.png" alt="">
+    </div>
+    <h1>I'm<h1 id="name">Ramrac</h1></h1>
+    <p>I am a frontenend developer and seeking to learn a full stack Web Development</p>
+    <a id="downloadcv" href="./RAMRAC RESUME LATEST.pdf">Download CV</a>
+</body>
+</html>
